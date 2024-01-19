@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* sextion main start */
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+/* sextion main start */
+
+/* HEADER SECTION START */
+header {
+    background-color: #e47e0a;
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+}
+header .logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+header nav {
+
+}
+header nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+header a:hover {
+    color: rgb(165, 96, 6);
+}
+/* SECTION MEDIA QUERY FOR 450PX IN HEDER START */
+@media (max-width: 450px) {
+    header .logo {
+        font-size: 15px;
+    }
+    header nav a {
+        font-size: 10px !important;
+        margin-left: 5px;
+        padding: 1px;
+    }
+}
+/* SECTION MEDIA QUERY FOR 450PX IN HEDER END */
+
+/* HEADER SECTION END */
+
+
+/* SECTION MAIN START */
+section {
+    padding: 50%;
+    background-color: rgba(255, 136, 0, 0.89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+section .box {
+    background-color: rgba(218, 104, 28, 0.863);
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px black;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+section .box .form {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+section .box .form h2 {
+    text-align: center;
+    margin: 2% 0;
+}
+section .box .form form {
+    text-align: center;
+    background-color: #e47e0a;
+    padding: 10%;
+    width: 90vw;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+section .box .form form .inputbox {
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .box .form form .inputbox input {
+    margin: 2%;
+    outline-style: none;
+    border: none;
+    background-color: rgba(5, 42, 97, 0.281);
+    border-bottom: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    padding: 2%;
+    border-radius: 5px;
+    width: 50vw;
+}
+section .box .form form .inputbox span {
+    font-weight: bold;
+}
+section .box .form form .sub {
+    font-weight: bold;
+    padding: 5%;
+    border-radius: 10px;
+    outline-style: none;
+    border: none;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+
+/* SECTION MAIN END */
+
+
+/* FOOTER SECTION START  */
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
+footer p {
+
+}
+footer div {
+
+}
+footer div a {
+
+}
+/* FOOTER SECTION END  */
