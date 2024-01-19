@@ -113,7 +113,7 @@ header a:hover {
     }
     .section-main h2 {
         font-size: 14px;
-        padding-top: 10%;
+        padding: 10% 10% 0 10%;
         margin: 0 !important;
     }
 }
