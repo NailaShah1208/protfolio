@@ -61,18 +61,20 @@ header a:hover {
 /* SECTION MEDIA QUERY FOR 450PX IN HEDER END */
 
 /* HEADER SECTION END */
+
+
 /* SECTION MAIN START */
 .section-main {
     display: flex;
     flex-direction: column;
     gap: 100px;
-    padding: 10%;
+    padding: 10% 2%;
     background-color: rgb(46, 27, 1);
 }
 .contentMain {
     background-color: #814705b6;
     color: #ddd;
-    padding: 10%;
+    padding: 5%;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
 }
@@ -81,7 +83,7 @@ header a:hover {
 }
 .content {
     background-color: rgba(168, 131, 9, 0.185);
-    padding: 10%;
+    padding: 5%;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
 }
@@ -90,6 +92,17 @@ header a:hover {
 }
 /* SECTION MEDIA QUERY FOR 450PX IN CONTENT START */
 @media (max-width: 650px) {
+
+    .section-main {
+
+    }
+    .section-main .contentMain {
+
+    }
+
+    .section-main .contentMain .content {
+
+    }
     .section-main .contentMain div p {
         font-size: 12px !important;
         font-weight: 500;
