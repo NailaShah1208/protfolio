@@ -143,25 +143,25 @@ span {
 </head>
 
 <body>
-    <div class="box">
+<div class="box">
         <div class="form">
-            <h2>Login Form</h2>
+            <h2>Form</h2>
             <form>
                 <div class="inputbox">
                     <input type="text" value="" id="username" required>
-                    <span>username</span>
+                    <span>username</span><br>
                 </div>
                 <div class="inputbox">
                     <input type="email" value="" id="email" required>
-                    <span>E-mail</span>
+                    <span>E-mail</span><br>
                 </div>
                 <div class="inputbox">
                     <input type="text" value="" id="phone" required>
-                    <span>Phone Number</span>
+                    <span>Phone Number</span><br>
                 </div>
                 <div class="inputbox">
-                    <input type="password" value="" id="pass" required>
-                    <span>Password</span>
+                    <input type="subject" value="" id="subject" required>
+                    <span>Subject</span><br>
                 </div>
                 <input type="submit" value="submit" class="sub" id="submit">
             </form>
@@ -199,9 +199,9 @@ span {
                     username: document.getElementById("username").value,
                     email: document.getElementById("email").value,
                     PhoneNumber: document.getElementById("phone").value,
-                    pass: document.getElementById("pass").value,
+                    subject: document.getElementById("subject").value,
                 });
-            alert("Login Sucessfull  !");
+            alert("The data has been sent. Thank you !");
         })
     </script>
 </body>
