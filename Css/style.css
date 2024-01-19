@@ -258,7 +258,9 @@ section {
         font-size: 12px;
     }
     .main {
-        background-size: 100% 100%;
+        /* background-size:  90% 50%; */
+        background-color: #ffbe3d !important;
+        background-image: url(s) !important;
     }
     .main-content h2 {
         font-size: 0.8em;
@@ -266,9 +268,153 @@ section {
     .main-content h3 {
         font-size: 1.4em;
     }
+    .ph-me {
+        width: 90vw;
+        border-radius: 10px;
+       
+        /* transform-origin: bottom right; */
+    }
+    
+    .main-pho {
+        /* background-color: #9e7117; */
+        background-image: url(../images/my3.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        width: 90vw;
+        height: 30vh;
+        animation-name: photo;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease;
+    }
+    
+    .main-parent {
+        background-color: #9e7117;
+        border-radius: 10px;
+    }
+    
 }
 @media (max-width: 300px){
     body{
         font-size: 10px;
     }
 }
+
+
+@keyframes photo {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    50% {
+        transform: rotatex(-50deg);
+    }
+    75% {
+        transform: translate(-50%);
+    }
+
+    100% {
+        transform: rotatey(10deg);
+    }
+}
+
+
+
+
+
+
+.new {
+    padding: 70px;
+}
+
+
+
+.box
+{
+    padding: 20px;
+    /* width: 90vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* backdrop-filter: blur(50px); */
+    border-radius: 5px;
+}
+.box .form
+{
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box .form h2
+{
+    text-align: center;
+    color: #000000;
+}
+.box .form form
+{
+    margin-top: 50px;
+    align-items: center;
+    background-color: #ff9c1c;
+    padding: 10%;
+    border-radius: 10px;
+    width: 20.25em;
+
+}
+.box .form form .inputbox input
+{
+    padding: 10px 20px;
+    border: none;
+    outline-style: none;
+    background: none;
+    border-bottom: 1px solid #12151e;
+    margin-bottom: 30px;
+    color: #fff;
+    width: 100%;
+}
+.box .form form .inputbox span
+{
+    position: absolute;
+    transform: translateY(-80px);
+    font-size: 14px;
+    color: black;
+}
+.box .form form .sub
+{
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    outline: none;
+    background: #c48812;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black ;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+span {
+    display: block;
+}
+
+input {
+    background-color: transparent !important;
+    height: 40px;
+    margin: 1%;
+}
+
+.inputbox span {
+    /* color: white !important; */
+} 
+
+.form form .sub {
+    background-color: #ddd !important;
+}
+
