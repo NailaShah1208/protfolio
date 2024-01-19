@@ -11,7 +11,7 @@
 }
 /* Header Section Start */
 header {
-    background-color: #d9d6d698;
+    background-color: #d9d6d6da;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -41,6 +41,22 @@ header {
 .navigation a:hover {
     color: #c18b1e;
 }
+/* media quiry section start */
+@media (max-width: 650px) {
+    header {
+        
+    }
+    header a {
+        font-size: 4vw !important;
+    }
+    header nav {
+
+    }
+    header nav a {
+        font-size: 2.5vw !important;
+    }
+}
+/* media quiry section end */
 /* Header Section End */
 
 /* Main Section Start */
@@ -297,6 +313,7 @@ section {
         background-color: #9e7117;
         border-radius: 10px;
         overflow: hidden;
+
     }
     
 }
@@ -314,7 +331,7 @@ section {
     }
 
     50% {
-        transform: rotatex(-50deg);
+        transform: rotatex(-10deg);
     }
     75% {
         transform: translate(-50%);
@@ -334,8 +351,6 @@ section {
     padding: 70px;
 }
 
-
-
 .box
 {
     padding: 20px;
@@ -344,7 +359,6 @@ section {
     justify-content: center;
     align-items: center;
     height: auto;
-    /* backdrop-filter: blur(50px); */
     border-radius: 5px;
 }
 .box .form
@@ -364,11 +378,11 @@ section {
 {
     margin-top: 50px;
     align-items: center;
-    background-color: #ff9c1c;
+    background-color: #fab427d2;
     padding: 10%;
     border-radius: 10px;
     width: 20.25em;
-
+    font-weight: bold;
 }
 .box .form form .inputbox input
 {
@@ -378,7 +392,7 @@ section {
     background: none;
     border-bottom: 1px solid #12151e;
     margin-bottom: 30px;
-    color: #fff;
+    color: #ffffff;
     width: 100%;
 }
 .box .form form .inputbox span
