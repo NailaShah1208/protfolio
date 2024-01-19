@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/articles.css">
     <title>Articles</title>
+    <script>
+        document.addEventListener('keydown', function(e) {
+          // Replace the following key code with the one you would like to use
+          if (e.keyCode === 85 && (navigator.platform.match('Mac') ? e.metaKey : e.ctrlKey)) {
+            alert('Sorry, this function is disabled for security reasons.');
+            return false;
+          }
+        }, false);
+      
+        // Right click disable
+        window.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+          alert('Sorry, this function is disabled for security reasons.');
+        }, false);
+      </script>
 </head>
 
 <body>
@@ -13,7 +28,7 @@
     <div class="main">
         <!-- HEADER SECTION START -->
         <header>
-            <a href="../index.html" class="logo">Mahmoud</a>
+            <a href="#" class="logo">Mahmoud</a>
             <nav class="navigation">
                 <a href="../index.html" target="_blank">Services</a>
                 <a href="../index.html" target="_blank">Projects</a>
