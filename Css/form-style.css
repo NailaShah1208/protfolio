@@ -66,7 +66,7 @@ section {
     height: 100%;
 }
 section .box {
-    background-color: rgba(218, 104, 28, 0.863);
+    background-color: rgba(255, 136, 0, 0.89);
     border-radius: 40px;
     box-shadow: 5px 5px 5px black;
     width: 100vw;
@@ -85,47 +85,75 @@ section .box .form {
 }
 section .box .form h2 {
     text-align: center;
+    margin: 5% 0;
+    border-bottom: 2px solid black;
+    padding: 1%;
+}
+section .box .form h2 hr {
+    text-align: center;
     margin: 2% 0;
+    /* background-color: black !important; */
+
 }
 section .box .form form {
     text-align: center;
     background-color: #e47e0a;
-    padding: 10%;
+    padding: 5%;
     width: 90vw;
     border-radius: 20px;
     box-shadow: 5px 5px 5px black;
 }
 section .box .form form .inputbox {
-    margin: 2%;
+    margin: 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0%;
 }
 section .box .form form .inputbox input {
-    margin: 2%;
     outline-style: none;
     border: none;
-    background-color: rgba(5, 42, 97, 0.281);
+    /* background-color: transparent; */
     border-bottom: 2px solid black;
     box-shadow: 5px 5px 5px black;
     padding: 2%;
     border-radius: 5px;
     width: 50vw;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
 }
 section .box .form form .inputbox span {
     font-weight: bold;
+    margin: 1% 0;
 }
 section .box .form form .sub {
     font-weight: bold;
-    padding: 5%;
+    padding: 1% 3%;
+    margin-top: 5%;
     border-radius: 10px;
     outline-style: none;
     border: none;
     box-shadow: 5px 5px 5px black;
     cursor: pointer;
+    font-size: 100%;
 }
-
+@media (max-width: 650px) {
+    section .box .form form .inputbox {
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+    section .box .form form .sub {
+        font-weight: bold;
+        padding: 3% 6%;
+       
+    }
+}
 /* SECTION MAIN END */
 
 
