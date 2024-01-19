@@ -1,93 +1,17 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>form</title>
     <style>
-/*         *
+        *
 {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
-}
-body
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url(img/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.box
-{
-    padding: 20px 30px;
-    width: 300px;
-    height: auto;
-    backdrop-filter: blur(50px);
-    border-radius: 5px;
-    background: rgba(49, 49, 49, .2);
-    border: 1px solid rgba(255, 255, 255, .5);
-}
-.box .form
-{
-    padding: 10px 20px;
-}
-.box .form h2
-{
-    text-align: center;
-    color: #fff;
-}
-.box .form form
-{
-    margin-top: 50px;
-    align-items: center;
-}
-.box .form form .inputbox input
-{
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    background: none;
-    border-bottom: 1px solid #12151e;
-    margin-bottom: 30px;
-    color: #fff;
-}
-.box .form form .inputbox span
-{
-    position: absolute;
-    transform: translateY(-80px);
-    font-size: 14px;
-    color: #fff;
-}
-.box .form form .sub
-{
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    outline: none;
-    background: #0cc0df;
-    cursor: pointer;
-    font-size: 16px;
-} */
-/*         test */
-                *
-{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
-        body
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url(img/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .box
@@ -149,11 +73,126 @@ span {
     display: block;
 }
 
+/* Header Section Start */
+header {
+    background-color: #d9d6d698;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+
+}
+.logo {
+    text-decoration: none;
+    color: var(--mainColor);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.logo:hover {
+    color: #c18b1e
+}
+.navigation a {
+    text-decoration: none;
+    color: var(--mainColor);
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation a:hover {
+    color: #c18b1e;
+}
+/* Header Section End */
+
+/* Footer Section Start */
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span {
+    color: #fab327;
+}
+.footer .social-icons a {
+    color: #fff;
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+/* Footer Section End */
+body
+{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(3,auto);
+    min-height: 100vh;
+    background-color: rgb(212, 169, 28);
+
+}
+header {
+    grid-column: 1/11;
+    grid-row: 1/2;
+}
+section {
+    grid-row: 2/3;
+    grid-column: 1/11;
+}
+footer {
+    grid-column: 1/11;
+    grid-row: 3/4;
+}
+
+@media (max-width: 1023px){
+    header {
+        padding: 12px 20px;
+    }
+    .navigation a {
+        padding-left: 10px;
+    }
+    .title {
+        font-size: 1.8em;
+    }
+    section {
+        padding: 80px 0px;
+    }
+
+}
+@media (max-width: 641px){
+    body {
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 300px){
+    body{
+        font-size: 10px;
+    }
+}
     </style>
 </head>
 
 <body>
-<div class="box">
+    <!-- Header Section Start -->
+    <header>
+        <a href="#" class="logo">Mahmoud</a>
+        <nav class="navigation">
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+
+    <section>
+    <div class="box">
         <div class="form">
             <h2>Form</h2>
             <form>
@@ -214,6 +253,19 @@ span {
             alert("The data has been sent. Thank you !");
         })
     </script>
+    </section>
+    <footer class="footer">
+        <p class="footer-title">Copyrights 	&copy; 2023 @ <span>Mahemoud Hamed</span> </p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=61555905863820&locale=ar_AR" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/+201144897324" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        
+    </footer>
+    <!--Footer Section End  -->
 </body>
 
 </html>
