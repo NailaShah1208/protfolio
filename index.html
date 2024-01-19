@@ -7,15 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/style.css">
     <title>Mahmoud</title>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG4BCE4TQX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RG4BCE4TQX');
-</script>
 </head>
 <body>
     <!-- Header Section Start -->
@@ -32,6 +23,7 @@
     <!-- Main Section Start -->
     <section class="main">
         <div>
+            <div class="main-parent"><div class="main-pho"><div class="pho-me"></div></div></div>
             <h2>Hello, I'm Mahmoud`<br><span>Frontend Developer</span></h2>
             <h3>We can be creative in creating any website we want </h3>
             <a href="#projects" class="main-btn">View my work</a>
@@ -199,6 +191,80 @@
                 </div>
             </div>
         </div>
+    </section> 
+    <section class="cards contact new" id="contact">
+        <!-- <div class="content">
+            <div class="card">
+                <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="info">
+                    <h4>Facebook</h4>
+                    <p><a href="https://web.facebook.com/profile.php?id=61555905863820&locale=ar_AR" target="_blank">Click-Here</a></p>
+                </div>
+            </div>
+        </div> -->
+        <div class="box">
+            <div class="form">
+                <form>
+                    <h2>Form</h2>
+                    <div class="inputbox">
+                        <input type="text" value="" id="username" placeholder="Enter your name..." required>
+                        <span>username</span><br>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" value="" id="email" placeholder="Enter your email..." required>
+                        <span>E-mail</span><br>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" value="" id="phone" placeholder="Enter your phone..." required>
+                        <span>Phone Number</span><br>
+                    </div>
+                    <div class="inputbox">
+                        <input type="subject" value="" id="subject" placeholder="Write any thing..." required>
+                        <span>Subject</span><br>
+                    </div>
+                    <input type="submit" value="Send" class="sub" id="submit">
+                </form>
+            </div>
+        </div>
+        <script type="module">
+
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+            import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+    
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+        apiKey: "AIzaSyCNMjuVxTsaFxKq_inLCRWwRBV2DYJe5-4",
+        authDomain: "mywork-2faa2.firebaseapp.com",
+        projectId: "mywork-2faa2",
+        storageBucket: "mywork-2faa2.appspot.com",
+        messagingSenderId: "438570547146",
+        appId: "1:438570547146:web:d89e716325ccd98999c133"
+      };
+    
+    
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+    
+            //get ref to database services
+            const db = getDatabase(app);
+    
+            document.getElementById("submit").addEventListener('click', function (e) {
+                e.preventDefault();
+                set(ref(db, 'All-users/' + document.getElementById("username").value),
+                    {
+                        username: document.getElementById("username").value,
+                        email: document.getElementById("email").value,
+                        PhoneNumber: document.getElementById("phone").value,
+                        subject: document.getElementById("subject").value,
+                    });
+                alert("The data has been sent. Thank you !");
+            })
+        </script>
     </section>
     <!--Contact Section End  -->
     <!--Footer Section Start  -->
