@@ -296,6 +296,7 @@ section {
     .main-parent {
         background-color: #9e7117;
         border-radius: 10px;
+        overflow: hidden;
     }
     
 }
