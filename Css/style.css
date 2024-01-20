@@ -61,7 +61,7 @@ header a:hover {
     header {
         background-color: var(--twoColor);
         z-index: 2222;
-        top: 20px;
+        top: 0px;
 
     }
 }
@@ -279,7 +279,7 @@ img {
 
 .cards-service .content .card .icon .fas {
     color: var(--mainColor);
-    font-size: 5.25em;
+    font-size: 2em;
 }
 
 .cards-service .content .card .info {}
@@ -408,7 +408,7 @@ img {
        color: var(--mainColor);
 }
 .contact  .content .card .info a i {
-    font-size: 5em;
+    font-size: 2em;
 }
 @media (max-width: 651px) {
     .contact  .content {
