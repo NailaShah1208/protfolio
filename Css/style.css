@@ -426,7 +426,7 @@ img {
     
 }
 .main-form .box {
-    width: 100%;
+    width: 90%;
     height: 600px;
     /* background-color: rgba(0, 0, 0, 0.373); */
     display: flex;
