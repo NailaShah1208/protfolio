@@ -61,6 +61,8 @@ header a:hover {
     header {
         background-color: var(--twoColor);
         z-index: 2222;
+        top: 20px;
+
     }
 }
 
