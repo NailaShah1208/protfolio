@@ -10,6 +10,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/style.css">
     <title>Mahmoud-Hamed</title>
+    <script>
+        document.addEventListener('keydown', function (e) {
+            // Replace the following key code with the one you would like to use
+            if (e.keyCode === 85 && (navigator.platform.match('Mac') ? e.metaKey : e.ctrlKey)) {
+                alert('Sorry, this function is disabled for security reasons.');
+                return false;
+            }
+        }, false);
+
+        // Right click disable
+        window.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert('Sorry, this function is disabled for security reasons.');
+        }, false);
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RG4BCE4TQX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RG4BCE4TQX');
+    </script>
 </head>
 
 <body>
