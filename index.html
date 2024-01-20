@@ -1,309 +1,318 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content=" An exceptional website design is the key to success in the digital era. We offer professional website design services at competitive prices, tailored to meet all your business needs. Our team of qualified professionals has years of experience and expertise in designing innovative, modern, and visually appealing websites. We guarantee to deliver a perfect website that represents your brand and attracts more customers. Don’t miss the chance to take your business to the next level and establish your online presence with us. Contact us today to get a quote and get started!,لا تفوت فرصة الحصول على موقع ويب احترافي عالي الجودة بأسعار مميزة! نحن نقدم خدمات تصميم مواقع ويب مبتكرة ومتطورة تناسب احتياجات عملك. استفد من خبرتنا الواسعة وفريق عملنا المؤهل المخصص لتلبية جميع متطلبات تصميم موقعك. اطلب الآن وتمتع بموقع ويب مثالي يناسب احتياجات عملك وضمان النجاح على الإنترنت.">
+    <meta name="keywords" content="HTML, CSS, JavaScript,Frontend,frontend,web,website,programing,backend,design,buildweb,learn web,create website,تصميم مواقع,انشاء موقع,موقع">
+    <meta name="author" content="John Doe">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/style.css">
     <title>Mahmoud-Hamed</title>
-    <script>
-        document.addEventListener('keydown', function(e) {
-          // Replace the following key code with the one you would like to use
-          if (e.keyCode === 85 && (navigator.platform.match('Mac') ? e.metaKey : e.ctrlKey)) {
-            alert('Sorry, this function is disabled for security reasons.');
-            return false;
-          }
-        }, false);
-      
-        // Right click disable
-        window.addEventListener('contextmenu', function(e) {
-          e.preventDefault();
-          alert('Sorry, this function is disabled for security reasons.');
-        }, false);
-      </script>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG4BCE4TQX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RG4BCE4TQX');
-</script>
 </head>
+
 <body>
-    <!-- Header Section Start -->
-    <header>
-        <a href="#" class="logo">Mahmoud</a>
-        <nav class="navigation">
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="fill-html/form.html" target="_blank">Contact</a>
-            <a href="fill-html/articles.html" target="_blank">Articles</a>
-        </nav>
-    </header>
-    <!-- Header Section End -->
+    <!-- Element-contains all element in body  Start-->
+    <div class="contains">
+        <!-- Header Section Start -->
+        <header>
+            <a href="#" class="logo">Mahmoud</a>
+            <nav class="navigation">
+                <a href="#services" title="Let's go services.">Services</a>
+                <a href="#projects" title="Let's go project.">Projects</a>
+                <a href="fill-html/form.html" title="Send me your data." target="_blank">Contact</a>
+                <a href="fill-html/articles.html" title="Go to articles." target="_blank">Articles</a>
+            </nav>
+        </header>
+        <!-- Header Section End -->
 
-    <!-- Main Section Start -->
-    <section class="main">
-        <div>
-            <div class="main-parent"><div class="main-pho"><div class="pho-me"></div></div></div>
-            <h2>Hello, I'm Mahmoud`<br><span>Frontend Developer</span></h2>
-            <h3>We can be creative in creating any website we want </h3>
-            <a href="#projects" class="main-btn">View my work</a>
+        <!-- About Section Start -->
+        <section class="about">
+            <div class="first-child-about">
+                <div class="main-photo"><div class="photo"></div></div>
+                <h2>Hello, I'm Mahmoud`<br><span>Frontend Developer</span></h2>
+                <h3>We can be creative in creating any website we want </h3>
+                <a href="#projects" title="Go to my work." class="main-btn">View my work</a>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=61555905863820&locale=ar_AR" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/+201144897324" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Services Section Start -->
+        <section class="cards-service" id="services">
+            <h2 class="title">Services</h2>
+
+            <!-- Section all service cards start -->
+
+            <!-- This element contains only two cards service -->
+            <div class="content">
+                <!--  Card one service start -->
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Script writing</h3>
+                        <p>Reseach and write scripts for differnt topics.</p>
+                    </div>
+                </div>
+                <!--  Card one service end -->
+
+                <!--  Card two service start -->
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Frontend developer</h3>
+                        <p>We can be creative in creating any website we want.</p>
+                    </div>
+                </div>
+                <!-- Card two service end -->
+            </div>
+            <!-- Section all service cards end-->
+        </section>
+        <!-- Services Section End -->
+
+        <!-- Projects Section Start -->
+        <section class="projects" id="projects">
+            <h2 class="title">Projects</h2>
+            <!-- This element contains only 6 cards projects-->
+            <div class="content">
+                <!-- Card project one start -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-1.png" alt="">
+                        <div class="project-info">
+                            <p class="project-category">Web design</p>
+                            <strong class="project-title">
+                                <span>Dev</span>
+                                <a href="fill-html/project-1.html" target="_blank" class="more-details">More details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card project one end -->
+
+                <!-- Card project two start -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-2.png" alt="">
+                        <div class="project-info">
+                            <p class="project-category">The design </p>
+                            <strong class="project-title">
+                                <span>Dev</span>
+                                <a href="fill-html/project-2.html" target="_blank" class="more-details">See design</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card project two end -->
+
+                <!-- Card project three start -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-3.png" alt="">
+                        <div class="project-info">
+                            <p class="project-category">The design </p>
+                            <strong class="project-title">
+                                <span>Dev</span>
+                                <a href="fill-html/project-3.html" target="_blank" class="more-details">See design</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card project three end -->
+
+                <!-- Card project four start -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-4.png" alt="">
+                        <div class="project-info">
+                            <p class="project-category">The design</p>
+                            <strong class="project-title">
+                                <span>Dev</span>
+                                <a href="fill-html/project-4.html" target="_blank" class="more-details">See design</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card project four end -->
+
+                <!-- Card project five start -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-5.png" alt="">
+                        <div class="project-info">
+                            <p class="project-category">The design</p>
+                            <strong class="project-title">
+                                <span>Dev</span>
+                                <a href="fill-html/project-5.html" target="_blank" class="more-details">See design</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card project five end -->
+
+                <!-- Card project six start -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-6.png" alt="">
+                        <div class="project-info">
+                            <p class="project-category">The design </p>
+                            <strong class="project-title">
+                                <span>Dev</span>
+                                <a href="fill-html/project-6.html" target="_blank" class="more-details">See design</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card  project six end -->
+            </div>
+        </section>
+        <!-- Projects Section End -->
+
+        <!--Contact Section Start  -->
+        <section class="cards contact" id="contact">
+            <h2 class="title">Let's work together</h2>
+
+            <!-- This element contains only 5 cards icones start-->
+            <div class="content">
+                <!-- Card phone one start -->
+                <div class="card">
+                    <div class="info">
+                        <a href="tel:+201144897324"><i class="fas fa-phone"></i><h4>Phone</h4></a>
+                    </div>
+                </div>
+                <!-- Card phone one end -->
+
+                <!-- Card email two start -->
+                <div class="card">
+                    <div class="info">
+                        <a href="mailto:mahemoudabuelsaoud@gmail.com"><i class="fas fa-envelope"></i><h4>Email</h4></a>
+                    </div>
+                </div>
+                <!-- Card email two end -->
+
+                <!-- Card form three start -->
+                <div class="card">
+                    <div class="info">
+                        <a href="fill-html/form.html" target="_blank"><i class="fa-solid fa-right-to-bracket"></i><h4>Send me</h4></a>
+                    </div>
+                </div>
+                <!-- Card form three end -->
+
+                <!-- Card whatsapp four start -->
+                <div class="card">
+                    <div class="info">
+                        <a href="https://wa.me/+201144897324" target="_blank"><i class="fa-brands fa-whatsapp"></i><h4>whatsapp</h4></a>
+                    </div>
+                </div>
+                <!-- Card whatsapp four end -->
+
+                <!-- Card facebook five start  -->
+                <div class="card">
+                    <div class="info">
+                       <a href="https://web.facebook.com/profile.php?id=61555905863820&locale=ar_AR"
+                                target="_blank"><i class="fa-brands fa-facebook"></i><h4>Facebook</h4></a>
+                    </div>
+                </div>
+                <!-- Card facebook five end  -->
+            </div>
+            <!-- This element contains only 5 cards icones end-->
+        </section>
+        <!--Contact Section end  -->
+
+
+        <!-- Form section start  -->
+        <section class="cards main-form" id="contact">
+            <div class="box">
+                <div class="form">
+                    <form>
+                        <h2>Form</h2>
+                        <div class="inputbox">
+                            <label>username</label><br>
+                            <input type="text" value="" id="username" placeholder="Enter your name..." required>
+                        </div>
+                        <div class="inputbox">
+                            <label>E-mail</label><br>
+                            <input type="email" value="" id="email" placeholder="Enter your email..." required>
+                        </div>
+                        <div class="inputbox">
+                            <label>Phone Number</label><br>
+                            <input type="text" value="" id="phone" placeholder="Enter your phone..." required>
+                        </div>
+                        <div class="inputbox">
+                            <label>Subject</label><br>
+                            <input type="subject" value="" id="subject" placeholder="Write any thing..." required>
+                        </div>
+                        <div class="parent-sub"><input type="submit" value="Send" class="sub" id="submit"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Form section end  -->
+
+        <!--Footer Section Start  -->
+        <footer>
+            <p class="footer-title">Copyrights &copy; 2023 @ <span>Mahemoud Hamed</span> </p>
             <div class="social-icons">
-                <a href="https://web.facebook.com/profile.php?id=61555905863820&locale=ar_AR" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-		<a href="https://wa.me/+201144897324" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://web.facebook.com/profile.php?id=61555905863820&locale=ar_AR" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/+201144897324" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-        </div>
-    </section>
-    <!-- Main Section End -->
-    <!-- Services Section Start -->
-    <section class="cards" id="services">
-        <h2 class="title">Services</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-edit"></i>
-                </div>
-                <div class="info">
-                    <h3>Script writing</h3>
-                    <p>Reseach and write scripts for differnt topics.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-user-secret"></i>
-                </div>
-                <div class="info">
-                    <h3>Frontend developer</h3>
-                    <p>We can be creative in creating any website we want.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Section End -->
+        </footer>
+        <!--Footer Section End  -->
+    </div>
+    <!-- Element-contains all element in body end-->
+</body>
+<script type="module">
 
-    <!-- Projects Section Start -->
-    <section class="projects" id="projects">
-        <h2 class="title">Projects</h2>
-        <div class="content">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project-1.png" alt="">
-                    <div class="project-info">
-                        <p class="project-category">Web design</p>
-                        <strong class="project-title">
-                            <a href="fill-html/project-1.html" target="_blank" class="more-details">More details</a>
-                        </strong>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project-2.png" alt="">
-                    <div class="project-info">
-                        <p class="project-category">The design </p>
-                        <strong class="project-title">
-                            <span>Dev</span>
-                            <a href="fill-html/project-2.html" target="_blank" class="more-details">See design</a>
-                        </strong>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project-3.png" alt="">
-                    <div class="project-info">
-                        <p class="project-category">The design </p>
-                        <strong class="project-title">
-                            <span>Dev</span>
-                            <a href="fill-html/project-3.html" target="_blank" class="more-details">See design</a>
-                        </strong>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project-4.png" alt="">
-                    <div class="project-info">
-                        <p class="project-category">The design</p>
-                        <strong class="project-title">
-                            <span>Dev</span>
-                            <a href="fill-html/project-4.html"  target="_blank" class="more-details">See design</a>
-                        </strong>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project-5.png" alt="">
-                    <div class="project-info">
-                        <p class="project-category">The design</p>
-                        <strong class="project-title">
-                            <span>Dev</span>
-                            <a href="fill-html/project-5.html" target="_blank" class="more-details">See design</a>
-                        </strong>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project-6.png" alt="">
-                    <div class="project-info">
-                        <p class="project-category">The design </p>
-                        <strong class="project-title">
-                            <span>Dev</span>
-                            <a href="fill-html/project-6.html" target="_blank" class="more-details">See design</a>
-                        </strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Projects Section End -->
-    <!--Contact Section Start  -->
-    <section class="cards contact" id="contact">
-        <h2 class="title">Let's work together</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <div class="info">
-                    <h4>Phone</h4>
-                    <p><a href="tel:+201144897324">Click-Here</a></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info">
-                    <h4>Email</h4>
-                    <p><a href="mailto:mahemoudabuelsaoud@gmail.com">Click-Here</a></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-right-to-bracket"></i>
-                </div>
-                <div class="info">
-                    <h4>Send me your info</h4>
-                    <p><a href="fill-html/form.html" target="_blank">Click-Here</a></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <div class="info">
-                    <h4>whatsapp</h4>
-                    <p><a href="https://wa.me/+201144897324" target="_blank">Click-Here</a></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                <i class="fa-brands fa-facebook"></i>
-                </div>
-                <div class="info">
-                    <h4>Facebook</h4>
-                    <p><a href="https://web.facebook.com/profile.php?id=61555905863820&locale=ar_AR" target="_blank">Click-Here</a></p>
-                </div>
-            </div>
-        </div>
-    </section> 
-    <section class="cards contact new" id="contact">
-        <!-- <div class="content">
-            <div class="card">
-                <div class="icon">
-                <i class="fa-brands fa-facebook"></i>
-                </div>
-                <div class="info">
-                    <h4>Facebook</h4>
-                    <p><a href="https://web.facebook.com/profile.php?id=61555905863820&locale=ar_AR" target="_blank">Click-Here</a></p>
-                </div>
-            </div>
-        </div> -->
-        <div class="box">
-            <div class="form">
-                <form>
-                    <h2>Form</h2>
-                    <div class="inputbox">
-                        <input type="text" value="" id="username" placeholder="Enter your name..." required>
-                        <span>username</span><br>
-                    </div>
-                    <div class="inputbox">
-                        <input type="email" value="" id="email" placeholder="Enter your email..." required>
-                        <span>E-mail</span><br>
-                    </div>
-                    <div class="inputbox">
-                        <input type="text" value="" id="phone" placeholder="Enter your phone..." required>
-                        <span>Phone Number</span><br>
-                    </div>
-                    <div class="inputbox">
-                        <input type="subject" value="" id="subject" placeholder="Write any thing..." required>
-                        <span>Subject</span><br>
-                    </div>
-                    <input type="submit" value="Send" class="sub" id="submit">
-                </form>
-            </div>
-        </div>
-        <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-            import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-    
-            // Your web app's Firebase configuration
-            const firebaseConfig = {
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
         apiKey: "AIzaSyCNMjuVxTsaFxKq_inLCRWwRBV2DYJe5-4",
         authDomain: "mywork-2faa2.firebaseapp.com",
         projectId: "mywork-2faa2",
         storageBucket: "mywork-2faa2.appspot.com",
         messagingSenderId: "438570547146",
         appId: "1:438570547146:web:d89e716325ccd98999c133"
-      };
-    
-    
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-    
-            //get ref to database services
-            const db = getDatabase(app);
-    
-            document.getElementById("submit").addEventListener('click', function (e) {
-                e.preventDefault();
-                set(ref(db, 'All-users/' + document.getElementById("username").value),
-                    {
-                        username: document.getElementById("username").value,
-                        email: document.getElementById("email").value,
-                        PhoneNumber: document.getElementById("phone").value,
-                        subject: document.getElementById("subject").value,
-                    });
-                alert("The data has been sent. Thank you !");
-            })
-        </script>
-    </section>
-    <!--Contact Section End  -->
-    <!--Footer Section Start  -->
-    <footer class="footer">
-        <p class="footer-title">Copyrights 	&copy; 2023 @ <span>Mahemoud Hamed</span> </p>
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://web.facebook.com/profile.php?id=61555905863820&locale=ar_AR" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="https://wa.me/+201144897324" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-        
-    </footer>
-    <!--Footer Section End  -->
-</body>
+    };
+
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    //get ref to database services
+    const db = getDatabase(app);
+
+    document.getElementById("submit").addEventListener('click', function (e) {
+        e.preventDefault();
+        set(ref(db, 'All-users/' + document.getElementById("username").value),
+            {
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                PhoneNumber: document.getElementById("phone").value,
+                subject: document.getElementById("subject").value,
+            });
+        alert("The data has been sent. Thank you !");
+    })
+</script>
+
 </html>
