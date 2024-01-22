@@ -475,9 +475,19 @@ img {
     box-shadow: 1px 1px 5px rgb(255, 255, 255), 1px 1px 5px black;
     padding: 2px 0; 
 }
-@media (max-width: 650px) {
+@media (max-width: 651px) {
     .main-form .box .form form .inputbox  {
         margin: 12vw;
+        width: fit-content !important;
+    }
+    .main-form .box .form form .inputbox  input {
+        width: 50vw!important;
+    }
+    .box {
+        width: 80vw !important;
+    }
+    .form {
+        width: 80vw;
     }
 }
 /* Form section end */
