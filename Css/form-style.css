@@ -97,7 +97,7 @@ section .box .form h2 hr {
 }
 section .box .form form {
     text-align: center;
-    background-color: #e47e0a;
+    background-color: #c06a07a9;
     padding: 5%;
     width: 90vw;
     border-radius: 20px;
@@ -120,9 +120,9 @@ section .box .form form .inputbox input {
     padding: 2%;
     border-radius: 5px;
     width: 50vw;
-    color: white;
+    color: black;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 800;
 }
 section .box .form form .inputbox span {
     font-weight: bold;
